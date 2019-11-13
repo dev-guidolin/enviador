@@ -40,21 +40,22 @@
                     <input type="text" class="form-control" id="senhaRemente" placeholder="Senha Remetente" name="senha">
                 </div>
                 <div class="form-group">
-                    <label for="nomeFake">Nome Fake</label>
-                    <input type="text" class="form-control" id="nameFake" placeholder="Nome Fake" name="nomeFake">
+                    <label for="resposta" >Cliente irá responder para:</label>
+                    <input type="email" class="form-control" id="reposta" placeholder="Resposta para..." name="resposta" style="background: #f7f288">
                 </div>
                 <div class="form-group">
-                    <label for="destinatario">Destinatário</label>
-                    <input type="email" class="form-control" id="destinatario" placeholder="Destinatário" name="destinatario">
+                    <label for="nomeFake" >Nome Fake</label>
+                    <input type="text" class="form-control clean" id="nameFake" placeholder="Nome Fake" name="nomeFake" style="background: #b2f7da">
                 </div>
                 <div class="form-group">
-                    <label for="assunto">Assunto</label>
-                    <input type="text" class="form-control" id="assunto" placeholder="Assunto" name="assunto">
+                    <label for="destinatario" >Destinatário</label>
+                    <input type="email" class="form-control clean" id="destinatario" placeholder="Destinatário" name="destinatario" style="background: #b2f7da">
                 </div>
                 <div class="form-group">
-                    <label for="resposta">Cliente irá responder para:</label>
-                    <input type="text" class="form-control" id="reposta" placeholder="Resposta para..." name="resposta">
+                    <label for="assunto" ">Assunto</label>
+                    <input type="text" class="form-control clean" id="assunto" placeholder="Assunto" name="assunto" style="background: #b2f7da">
                 </div>
+
                 <div class="form-group" id="anexos">
                     <input type="file"  id="images" name="images[]" multiple>
                 </div>
@@ -81,7 +82,9 @@
 
 
 <script>
-
+$(function () {
+    $('.clean').val('');
+})
 
 </script>
 </body>

@@ -82,7 +82,7 @@ try {
     }
 
     if (!is_dir('uploads')){
-        mkdir("uploads", 0700);
+        mkdir("uploads", 0777,true);
     }
 
 } catch (Exception $e) {
